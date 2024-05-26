@@ -15,7 +15,7 @@ const sendAllGames = (req, res) => {
 
 const sendGameUpdated = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
-    res.end("Игра обновлена");
+    res.end("Game updated successfully");
 };
 
 const sendGameDeleted = (req, res) => {
