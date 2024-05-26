@@ -10,6 +10,7 @@ const {
   checkEmptyNameAndEmail,
   checkEmptyNameAndEmailAndPassword,
   hashPassword,
+  checkEmptyNameEmail
 } = require("../middlewares/users");
 const {
   sendAllUsers,
@@ -40,6 +41,7 @@ usersRouter.post(
 usersRouter.put(
   "/users/:id",
   checkEmptyNameAndEmail,
+  checkEmptyNameEmail,
   checkAuth,
   updateUser,
   sendUserUpdated
