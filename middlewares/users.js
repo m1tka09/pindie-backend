@@ -30,7 +30,7 @@ const findAllUsers = async (req, res, next) => {
 const updateUser = async (req, res, next) => {
   try {
     // В метод передаём id из параметров запроса и объект с новыми свойствами
-    req.user = await user.findByIdAndUpdate(req.params.id, req.body);
+    req.user = await users.findByIdAndUpdate(req.params.id, req.body);
     next();
   } catch (error) {
     res.status(400).send({ message: "Ошибка обновления пользователя" });
