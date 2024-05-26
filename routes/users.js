@@ -38,14 +38,14 @@ usersRouter.post(
   createUser,
   sendUserCreated
 );
-usersRouter.put(
-  "/users/:id",
-  checkEmptyNameAndEmail,
-  checkEmptyNameEmail,
-  checkAuth,
-  updateUser,
-  sendUserUpdated
-);
+// usersRouter.put(
+//   "/users/:id",
+//   checkEmptyNameAndEmail,
+//   checkEmptyNameEmail,
+//   checkAuth,
+//   updateUser,
+//   sendUserUpdated
+// );
 usersRouter.delete(
     "/users/:id",
     checkAuth,
