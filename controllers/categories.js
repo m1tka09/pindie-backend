@@ -13,10 +13,10 @@ const sendAllCategories = (req, res) => {
   res.end(JSON.stringify(req.categoriesArray));
 };
 
-const sendCategoryUpdated = (req, res) => {
-  res.setHeader("Content-Type", "application/json");
-  res.end({ message: "Категория обновлена" });
-};
+const sendCategoryUpdated  = (req, res) => {
+  res.setHeader('Content-Type', 'application/json');
+  res.end("Категория обновлена");
+}; 
 
 const sendCategoryDeleted = (req, res) => {
   res.setHeader("Content-Type", "application/json");
