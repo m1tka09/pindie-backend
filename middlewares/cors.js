@@ -1,8 +1,7 @@
 const allowedCors = [
-  "https://frontsaba.nomoredomainswork.ru/api",  
-  //'https://practicum.yandex.ru',
-  //'https://students-projects.ru',
-  //'http://localhost:3001'
+  "https://frontsaba.nomoredomainswork.ru", 
+  "http://frontsaba.nomoredomainswork.ru"
+   "http://localhost:3000" 
 ];
 
 function cors(req, res, next) {
