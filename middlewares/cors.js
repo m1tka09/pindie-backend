@@ -1,7 +1,7 @@
 const allowedCors = [
   "https://frontsaba.nomoredomainswork.ru", 
-  "http://frontsaba.nomoredomainswork.ru"
-   "http://localhost:3000" 
+  "http://frontsaba.nomoredomainswork.ru",
+   "http://localhost:3000"
 ];
 
 function cors(req, res, next) {
