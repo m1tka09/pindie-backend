@@ -10,7 +10,7 @@ const {
   checkEmptyNameAndEmail,
   checkEmptyNameAndEmailAndPassword,
   hashPassword,
-  checkEmptyNameEmail
+  //checkEmptyNameEmail
 } = require("../middlewares/users");
 const {
   sendAllUsers,
