@@ -10,8 +10,7 @@ const {
   checkEmptyNameAndEmail,
   checkEmptyNameAndEmailAndPassword,
   hashPassword,
-  //checkEmptyNameEmail
-} = require("../middlewares/users");
+  } = require("../middlewares/users");
 const {
   sendAllUsers,
   sendUserCreated,
@@ -38,14 +37,13 @@ usersRouter.post(
   createUser,
   sendUserCreated
 );
-// usersRouter.put(
-//   "/users/:id",
-//   checkEmptyNameAndEmail,
-//   checkEmptyNameEmail,
-//   checkAuth,
-//   updateUser,
-//   sendUserUpdated
-// );
+usersRouter.put(
+  "/users/:id",
+  checkEmptyNameAndEmail,
+  checkAuth,
+  updateUser,
+  sendUserUpdated
+);
 usersRouter.delete(
     "/users/:id",
     checkAuth,
