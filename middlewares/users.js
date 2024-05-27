@@ -70,14 +70,6 @@ const checkEmptyNameAndEmail = async (req, res, next) => {
   }
 };
 
-const checkEmptyNameEmail = async (req, res, next) => {
-    if (!req.body.username || !req.body.email) {
-        res.status(400).send({ message: "Введите имя и email" });
-    } else {
-        next();
-    }
-};
-
 const checkIsUserExists = async (req, res, next) => {
   const isInArray = req.usersArray.find((user) => {
     return req.body.email === user.email;
@@ -114,5 +106,4 @@ module.exports = {
   checkEmptyNameAndEmailAndPassword,
   checkIsUserExists,
   hashPassword,
-  checkEmptyNameEmail
-};
+  };
